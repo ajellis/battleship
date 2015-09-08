@@ -4,11 +4,13 @@ class Player
   end
 end
 
-class HumanPlayer < Player
-  def name
+  class HumanPlayer < Player
+    def name
     "Alice"
+    end
   end
-end
 
-class ComputerPlayer < Player
-end
+  class ComputerPlayer < Player
+    def initialize ()
+    end
+  end
