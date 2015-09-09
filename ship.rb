@@ -5,6 +5,7 @@ class Ship
     @length = length
     @positions = []
     @hits = []
+    @misses = []
   end
 
   def place(x, y, across)
