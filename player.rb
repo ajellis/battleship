@@ -1,11 +1,15 @@
 class Player
   def initialize(name)
+    @name = name
   end
 end
 
   class HumanPlayer < Player
-    def name
-      "Alice"
+    def initialize(name = "Dave")
+      @name = name
+    end
+    def name()
+      @name
     end
   end
 
@@ -16,3 +20,5 @@ end
       "HAL 9000"
     end
   end
+
+  # name = HumanPlayer.new("Alice")
