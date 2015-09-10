@@ -47,7 +47,8 @@ def display
     end
 
     def fire_at(x, y)
-      if has_ship_on?(x, y)
+      if has_ship_on?(x, y) && !@hits.include?([x, y])
+         @hits << [x, y]
         return true
       else
         return false
